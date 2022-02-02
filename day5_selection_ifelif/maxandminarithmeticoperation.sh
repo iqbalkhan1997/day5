@@ -7,19 +7,28 @@ echo $a;
 echo $b;
 echo $c;
 
+#storing 1st arithmetic operation into q variable
+
 q=$((a + b * c));
 echo $q;
+
+#storing 2nd arithmetic operation into w variable
 
 w=$((a % b + c));
 echo $w;
 
+#storing 3rd arithmetic operation into e variable
+
 e=$((c + a / b));
 echo $e;
+
+#storing 4th arithmetic operation into r variable
 
 r=$((a * b + c));
 echo $r;
 
 # To find Maximum value
+
 if [ $q -gt $w ] && [ $q -gt $e ] && [ $q -gt $r ];
 then
 	echo "Maximum value is 1st arithmetic expression (a+b*c)= $q"
@@ -34,6 +43,7 @@ else
 fi;
 
 # To find Minimum value
+
 if [ $q -lt $w ] && [ $q -lt $e ] && [ $q -lt $r ];
 then
         echo "Minimum value is 1st arithmetic expression (a+b*c)= $q"
